@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Abroad - Explore the World</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#home" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
+                    <i class="fas fa-plane-departure"></i>
+                    <span>Travel Abroad</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#booking">Book Now</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="glass-card hero-card">
+                <h1>Discover Your Next Adventure</h1>
+                <p>Explore breathtaking destinations around the world with exclusive travel packages</p>
+                <button class="cta-button">Start Exploring</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search/Booking Form -->
+    <section id="booking" class="booking-section">
+        <div class="container">
+            <div class="glass-card booking-card">
+                <h2>Plan Your Journey</h2>
+                <form class="booking-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="destination">Destination</label>
+                            <select id="destination" required>
+                                <option value="">Select Destination</option>
+                                <option value="paris">Paris, France</option>
+                                <option value="tokyo">Tokyo, Japan</option>
+                                <option value="bali">Bali, Indonesia</option>
+                                <option value="maldives">Maldives</option>
+                                <option value="dubai">Dubai, UAE</option>
+                                <option value="switzerland">Switzerland</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="checkin">Check-in</label>
+                            <input type="date" id="checkin" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="checkout">Check-out</label>
+                            <input type="date" id="checkout" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="travelers">Travelers</label>
+                            <input type="number" id="travelers" min="1" max="10" value="2" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="search-button">
+                        <i class="fas fa-search"></i> Search Packages
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="destinations">
+        <div class="container">
+            <h2 class="section-title">Popular Destinations</h2>
+            <div class="destinations-grid">
+                <div class="glass-card destination-card">
+                    <div class="destination-image" style="background-image: url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800')">
+                        <div class="destination-overlay">
+                            <h3>Paris, France</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Europe</p>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <div class="price">From ₹107,817</div>
+                        <p>Experience the city of lights with its iconic Eiffel Tower and romantic streets</p>
+                        <button class="details-button">View Details</button>
+                    </div>
+                </div>
+
+                <div class="glass-card destination-card">
+                    <div class="destination-image" style="background-image: url('https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800')">
+                        <div class="destination-overlay">
+                            <h3>Tokyo, Japan</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Asia</p>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <div class="price">From ₹124,417</div>
+                        <p>Immerse yourself in Japanese culture, technology, and culinary excellence</p>
+                        <button class="details-button">View Details</button>
+                    </div>
+                </div>
+
+                <div class="glass-card destination-card">
+                    <div class="destination-image" style="background-image: url('https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800')">
+                        <div class="destination-overlay">
+                            <h3>Bali, Indonesia</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Southeast Asia</p>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <div class="price">From ₹74,617</div>
+                        <p>Tropical paradise with stunning beaches, temples, and lush landscapes</p>
+                        <button class="details-button">View Details</button>
+                    </div>
+                </div>
+
+                <div class="glass-card destination-card">
+                    <div class="destination-image" style="background-image: url('https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=800')">
+                        <div class="destination-overlay">
+                            <h3>Maldives</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Indian Ocean</p>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <div class="price">From ₹182,517</div>
+                        <p>Luxury overwater villas and pristine crystal-clear waters await</p>
+                        <button class="details-button">View Details</button>
+                    </div>
+                </div>
+
+                <div class="glass-card destination-card">
+                    <div class="destination-image" style="background-image: url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800')">
+                        <div class="destination-overlay">
+                            <h3>Dubai, UAE</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Middle East</p>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <div class="price">From ₹141,017</div>
+                        <p>Modern marvels, luxury shopping, and desert adventures combined</p>
+                        <button class="details-button">View Details</button>
+                    </div>
+                </div>
+
+                <div class="glass-card destination-card">
+                    <div class="destination-image" style="background-image: url('https://images.unsplash.com/photo-1527004013197-933c4bb611b3?w=800')">
+                        <div class="destination-overlay">
+                            <h3>Swiss Alps</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Europe</p>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <div class="price">From ₹149,317</div>
+                        <p>Breathtaking mountain scenery with world-class skiing and hiking</p>
+                        <button class="details-button">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="packages">
+        <div class="container">
+            <h2 class="section-title">Our Exclusive Packages</h2>
+            <div class="packages-grid destinations-grid">
+                <!-- Package Card 1 -->
+                <div class="glass-card destination-card">
+                    <div class="destination-image" style="background-image: url('https://images.unsplash.com/photo-1501785888041-af3ba6f60086?w=800')">
+                        <div class="destination-overlay">
+                            <h3>European Grand Tour</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> 10 Cities, 14 Days</p>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <div class="price">From ₹290,417</div>
+                        <p>Explore the best of Europe with our comprehensive 14-day tour.</p>
+                        <button class="details-button">View Package</button>
+                    </div>
+                </div>
+
+                <!-- Package Card 2 -->
+                <div class="glass-card destination-card">
+                    <div class="destination-image" style="background-image: url('https://images.unsplash.com/photo-1523908599474-2192027f297f?w=800')">
+                        <div class="destination-overlay">
+                            <h3>Southeast Asia Explorer</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> 5 Countries, 12 Days</p>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <div class="price">From ₹240,617</div>
+                        <p>An unforgettable journey through the vibrant cultures of Southeast Asia.</p>
+                        <button class="details-button">View Package</button>
+                    </div>
+                </div>
+
+                <!-- Package Card 3 -->
+                <div class="glass-card destination-card">
+                    <div class="destination-image" style="background-image: url('https://images.unsplash.com/photo-1506197603052-3b6ceebc6403?w=800')">
+                        <div class="destination-overlay">
+                            <h3>African Safari Adventure</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Kenya & Tanzania, 7 Days</p>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <div class="price">From ₹414,917</div>
+                        <p>Witness the majestic wildlife and stunning landscapes of the African savanna.</p>
+                        <button class="details-button">View Package</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us</h2>
+            <div class="features-grid">
+                <div class="glass-card feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Best Prices</h3>
+                    <p>Guaranteed lowest prices on all travel packages with no hidden fees</p>
+                </div>
+                <div class="glass-card feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Our dedicated team is available round the clock to assist you</p>
+                </div>
+                <div class="glass-card feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Secure Booking</h3>
+                    <p>Safe and encrypted payment methods for worry-free transactions</p>
+                </div>
+                <div class="glass-card feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Global Coverage</h3>
+                    <p>Access to 500+ destinations across 6 continents worldwide</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="glass-card contact-card">
+                <p>Have questions or need assistance? Reach out to us!</p>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="glass-card footer-card">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3><i class="fas fa-plane-departure"></i> Travel Abroad</h3>
+                        <p>Your gateway to unforgettable adventures around the world</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#destinations">Destinations</a></li>
+                            <li><a href="#packages">Travel Packages</a></li>
+                            <li><a href="#booking">Book Now</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><i class="fas fa-envelope"></i> info@travelabroad.com</li>
+                            <li><i class="fas fa-phone"></i> +91-9876543210</li>
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Travel Street, Uttarakhand, India</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Travel Abroad. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
