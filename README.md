@@ -1,7 +1,6 @@
 # Travel Abroad - Explore the World
 
-https://travel-abroad-coral.vercel.app/
-https://travel-abroad-plum.vercel.app/
+https://travel-abroad-make-trip-to-explore.vercel.app/
 
 Travel Abroad is a modern, responsive travel website built with HTML, CSS, and JavaScript. It features a glassmorphism-inspired UI, smooth scrolling, dynamic content, and a theme toggle for light and dark modes.
 
@@ -53,5 +52,6 @@ The website is designed to run directly in a browser without any server-side dep
 - **Colors:** Modify the CSS variables in `:root` in `styles.css` to change the primary, secondary, and accent colors.
 - **Content:** Update the text and images in `index.html` to reflect your desired destinations, packages, and company information.
 - **Theme:** The default theme is dark. You can change this in `script.js` by modifying the `currentTheme` variable initialization.
+
 
 
